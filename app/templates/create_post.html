@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Create Post</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <textarea name="content" rows="5" cols="40" placeholder="What's on your mind?"></textarea>
+        <br><br>
+        <button type="submit">Post</button>
+    </form>
+{% endblock %}
+
